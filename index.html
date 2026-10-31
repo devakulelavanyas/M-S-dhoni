@@ -1,0 +1,381 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MS Dhoni | The Untold Story</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #101820;
+    color: white;
+}
+
+header {
+    background: #080d12;
+    padding: 22px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    color: #f5c542;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #f5c542;
+}
+
+.hero {
+    min-height: 550px;
+    display: flex;
+    align-items: center;
+    padding: 70px 10%;
+    background:
+    linear-gradient(90deg, #101820 35%, #10182099),
+    url("https://images.unsplash.com/photo-1531415074968-036ba1b575da")
+    center/cover;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.hero h1 {
+    font-size: 58px;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #f5c542;
+}
+
+.hero p {
+    color: #ddd;
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 13px 25px;
+    background: #f5c542;
+    color: #101820;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+section {
+    padding: 75px 10%;
+}
+
+.section-title {
+    font-size: 34px;
+    color: #f5c542;
+    margin-bottom: 25px;
+}
+
+.about p, .story p {
+    line-height: 1.9;
+    color: #ccc;
+    margin-bottom: 18px;
+}
+
+.timeline {
+    border-left: 3px solid #f5c542;
+    padding-left: 25px;
+}
+
+.event {
+    margin-bottom: 35px;
+}
+
+.event h3 {
+    color: #f5c542;
+    margin-bottom: 10px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+}
+
+.card {
+    background: #1d2a35;
+    padding: 25px;
+    border-radius: 10px;
+    border-bottom: 3px solid #f5c542;
+}
+
+.card h3 {
+    color: #f5c542;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #ccc;
+    line-height: 1.7;
+}
+
+.quote {
+    background: #f5c542;
+    color: #101820;
+    text-align: center;
+    padding: 65px 10%;
+}
+
+.quote h2 {
+    font-size: 29px;
+    font-style: italic;
+}
+
+footer {
+    background: #080d12;
+    text-align: center;
+    padding: 25px;
+    color: #aaa;
+}
+
+@media(max-width: 700px) {
+    header {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    nav a {
+        margin: 5px;
+        font-size: 12px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">THE DHONI STORY</div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#journey">Journey</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#legacy">Legacy</a>
+    </nav>
+</header>
+
+<!-- HERO SECTION -->
+<div class="hero" id="home">
+    <div class="hero-content">
+        <h1>MAHENDRA SINGH <span>DHONI</span></h1>
+        <p>
+            From a small town in Ranchi to the world's biggest
+            cricket stadiums. A journey filled with struggles,
+            sacrifices, failures, determination and unforgettable
+            victories.
+        </p>
+        <a href="#about" class="btn">EXPLORE HIS JOURNEY</a>
+    </div>
+</div>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+    <h2 class="section-title">Who Is MS Dhoni?</h2>
+
+    <p>
+        Mahendra Singh Dhoni was born on 7 July 1981 in Ranchi,
+        Jharkhand. He is one of India's most celebrated cricketers
+        and former captains.
+    </p>
+
+    <p>
+        His journey was not easy. Coming from a middle-class family,
+        Dhoni worked hard to pursue his cricketing dream. Before
+        international fame, he worked as a Travelling Ticket
+        Examiner (TTE) at Kharagpur railway station.
+    </p>
+
+    <p>
+        His determination, powerful batting, exceptional
+        wicketkeeping and calm leadership helped him become a
+        legendary figure in Indian cricket.
+    </p>
+</section>
+
+<!-- STRUGGLES -->
+<section class="story">
+    <h2 class="section-title">The Struggles Behind The Success</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Small-Town Dreams</h3>
+            <p>
+                Dhoni came from Ranchi, away from India's traditional
+                cricketing centres. He had to prove himself through
+                domestic cricket and consistent performances.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Railway Job</h3>
+            <p>
+                Before international recognition, Dhoni worked as a
+                TTE at Kharagpur. Balancing professional responsibilities
+                and his cricketing ambitions was an important part
+                of his early journey.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Waiting For His Chance</h3>
+            <p>
+                He spent years developing his skills in local and
+                domestic cricket before making his international debut
+                in December 2004.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Handling Criticism</h3>
+            <p>
+                From disappointing performances to difficult captaincy
+                decisions, Dhoni faced criticism but continued to
+                focus on his game and team.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- TIMELINE -->
+<section id="journey">
+    <h2 class="section-title">The Journey Of A Legend</h2>
+
+    <div class="timeline">
+
+        <div class="event">
+            <h3>1981 - The Beginning</h3>
+            <p>Born in Ranchi, Bihar (now Jharkhand), India.</p>
+        </div>
+
+        <div class="event">
+            <h3>2004 - International Debut</h3>
+            <p>Made his ODI debut against Bangladesh.</p>
+        </div>
+
+        <div class="event">
+            <h3>2007 - T20 World Cup</h3>
+            <p>Led India to victory in the inaugural ICC T20 World Cup.</p>
+        </div>
+
+        <div class="event">
+            <h3>2011 - World Cup Glory</h3>
+            <p>Captained India to the ICC Cricket World Cup title
+            and finished the final with an unforgettable six.</p>
+        </div>
+
+        <div class="event">
+            <h3>2013 - Champions Trophy</h3>
+            <p>Led India to victory in the ICC Champions Trophy.</p>
+        </div>
+
+        <div class="event">
+            <h3>2020 - International Retirement</h3>
+            <p>Announced his retirement from international cricket
+            on 15 August 2020.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section id="achievements">
+    <h2 class="section-title">Achievements & Records</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>2007</h3>
+            <p>ICC T20 World Cup Champion Captain.</p>
+        </div>
+
+        <div class="card">
+            <h3>2011</h3>
+            <p>ICC Cricket World Cup Champion Captain.</p>
+        </div>
+
+        <div class="card">
+            <h3>2013</h3>
+            <p>ICC Champions Trophy Champion Captain.</p>
+        </div>
+
+        <div class="card">
+            <h3>IPL Legacy</h3>
+            <p>Led Chennai Super Kings to multiple IPL titles.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- LEGACY -->
+<section id="legacy">
+    <h2 class="section-title">The Legacy Of Captain Cool</h2>
+
+    <p style="color:#ccc; line-height:1.9;">
+        MS Dhoni is more than a cricketer. He is an inspiration
+        for millions of young people who dream of achieving
+        something extraordinary.
+    </p>
+
+    <p style="color:#ccc; line-height:1.9; margin-top:15px;">
+        His leadership taught us that success is not just about
+        winning. It is about trusting your team, accepting
+        responsibility, staying calm under pressure and learning
+        from failure.
+    </p>
+</section>
+
+<!-- QUOTE -->
+<div class="quote">
+    <h2>
+        "You don't play for the crowd, you play for the country."
+    </h2>
+    <p style="margin-top:15px;">— A tribute to MS Dhoni</p>
+</div>
+
+<footer>
+    <p>© 2026 The Dhoni Story | A Fan-Made Tribute Website</p>
+    <p style="margin-top:10px;">Celebrating The Legend. Celebrating The Journey.</p>
+</footer>
+
+</body>
+</html>
